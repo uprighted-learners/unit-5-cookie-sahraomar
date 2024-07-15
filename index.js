@@ -1,10 +1,9 @@
 const express = require("express");
 const cookieParser = require("cookie-parser"); // Make sure this line is present and correct
 const app = express();
+const PORT = 3000;
 
 app.use(express.static("public"));
-
-const PORT = 3000;
 
 app.use(cookieParser());
 
